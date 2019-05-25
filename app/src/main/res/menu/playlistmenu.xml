@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:enabled="true"
+        android:id="@+id/happy"
+        android:icon="@drawable/happysong"
+        android:title="@string/happy"
+        app:showAsAction="ifRoom"/>
+    <item android:enabled="true"
+        android:id="@+id/sad"
+        android:icon="@drawable/sadsong"
+        android:title="@string/sad"
+        app:showAsAction="ifRoom"/>
+    <item android:enabled="true"
+        android:id="@+id/all"
+        android:icon="@drawable/viewall"
+        android:title="allsongs"
+        app:showAsAction="ifRoom"/>
+
+</menu>

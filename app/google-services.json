@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "193791527768",
+    "firebase_url": "https://petclick-179411.firebaseio.com",
+    "project_id": "petclick-179411",
+    "storage_bucket": "petclick-179411.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193791527768:android:3ad5383300b0a782",
+        "android_client_info": {
+          "package_name": "com.upgrad.beats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193791527768-is2hvcnid2d1ndts66kkgcs3i3a63j4u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.upgrad.beats",
+            "certificate_hash": "3b85c343609e63aef01b2b7019e65e74b384b154"
+          }
+        },
+        {
+          "client_id": "193791527768-d0md5boas6qeloqnjino2ni2ei6itcoi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3Ps97jWqNdkLbv3d2nE9HPoRXgBgeNCE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "193791527768-d0md5boas6qeloqnjino2ni2ei6itcoi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

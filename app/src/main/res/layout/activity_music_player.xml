@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicPlayerActivity">
+
+    <LinearLayout
+        android:id="@+id/rooter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/paper"
+        android:orientation="vertical"
+        android:weightSum="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/overback"
+            android:layout_width="match_parent"
+            android:layout_height="0dp "
+            android:layout_weight="7"
+            android:background="#40FFFFFF"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/sad"
+                    android:layout_width="64dip"
+                    android:layout_height="64dip"
+                    android:src="@drawable/ic_heart_broken"
+                    app:cb_color="#807F7B"
+                    app:cb_pressedRingWidth="8dip" />
+
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/repeat"
+                    android:layout_width="64dip"
+                    android:layout_height="64dip"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_replay_black_24dp"
+                    app:cb_color="#807F7B"
+                    app:cb_pressedRingWidth="8dip" />
+
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/happy"
+                    android:layout_width="64dip"
+                    android:layout_height="64dip"
+                    android:src="@drawable/ic_heart"
+                    app:cb_color="#807F7B"
+                    app:cb_pressedRingWidth="8dip" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                app:srcCompat="@drawable/ill" />
+
+            <TextView
+                android:id="@+id/songname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/boogaloo"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text="Song Name"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/artistname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text="Artist's Name"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/albumname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text="ALBUM"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/curr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="0:00"
+                    android:textColor="@android:color/white" />
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    style="@style/MySeekBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:secondaryProgressTint="#FFFFFF"
+                    android:thumbTint="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/totaldur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="5:00"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center|center_horizontal"
+                android:orientation="horizontal"
+                android:transitionGroup="true">
+
+
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/stop"
+                    android:layout_width="64dip"
+                    android:layout_height="64dip"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_stop_black_24dp"
+                    app:cb_color="#807F7B"
+                    app:cb_pressedRingWidth="8dip" />
+
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/previous"
+                    android:layout_width="64dip"
+                    android:layout_height="64dip"
+                    android:src="@drawable/ic_skip_previous_black_24dp"
+                    app:cb_color="#807F7B"
+                    app:cb_pressedRingWidth="8dip" />
+
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/play"
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:src="@android:drawable/ic_media_play"
+                    app:cb_color="#807F7B"
+                    app:cb_pressedRingWidth="8dip" />
+
+
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/next"
+                    android:layout_width="64dip"
+                    android:layout_height="64dip"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_skip_next_black_24dp"
+                    app:cb_color="#807F7B"
+                    app:cb_pressedRingWidth="8dip" />
+
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/shuffle"
+                    android:layout_width="64dip"
+                    android:layout_height="64dip"
+                    android:src="@drawable/ic_shuffle_black_24dp"
+                    app:cb_color="#807F7B"
+                    app:cb_pressedRingWidth="8dip" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
